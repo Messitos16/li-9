@@ -1,0 +1,189 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.915);
+    background-color: black;
+    height: 200px;
+}
+
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.navbar-menu li {
+    display: inline-block;
+
+}
+
+.navbar-menu li a {
+    display: inline-block;
+    color: grey;
+    opacity: 1;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: all .07s ease-in-out;
+    background-color: coral;
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all .1s ease-in-out;
+    box-shadow: 0 4px 6px rgba(255, 164, 131, 0.995);
+}
+
+.navbar-menu li a:hover {
+    transform: scale(1.05);
+    color: #fff;
+    box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
+}
+
+.navbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.callback {
+    margin-left: 20px;
+    padding: 13px;
+    background-color: coral;
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all .1s ease-in-out;
+    box-shadow: 0 4px 6px rgba(255, 127, 80, .2);
+    box-shadow: 0 0.9px 10px rgba(255, 255, 255, 0.915);
+}
+
+.callback:hover {
+    transform: scale(1.05);
+    color: #fff;
+    box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
+}
+
+.navbar-logo {
+    font-weight: 750;
+    font-size: 70px;
+    text-decoration: none;
+    color: white;
+    transition: all .1s ease-in-out;
+    padding-left: 80px;
+}
+
+.navbar-logo:hover {
+    color: coral;
+}
+
+.BMW-project {
+    background-color: black;
+}
+
+.project img {
+    width: 470px;
+    height: 510px;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 5px 5px 20px black;
+}
+
+.project p {
+    font-size: 20px;
+    font-weight: 700px;
+    overflow: hidden;
+}
+
+.car-info{
+    display: flex;
+  margin-left:  16px;
+}
+
+.car-info {
+    border-radius: 50px;
+  display: inline-block;
+}
+.car-in{
+    margin-left: 530px;
+    border-radius: 50px;
+}
+.car-fo{
+   margin-left: 1050px;
+   border-radius: 50px;
+}
+
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+.intro{
+    height: 70px;
+    width: 450px;
+    padding: 6px ;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27, .1);
+    color: white;
+    font-weight: bold;
+    bottom: -13px;
+    border-radius: 10px;
+    transition: all .3s linear;
+    padding-left:30px ;
+    
+}
+.project img:hover{
+    cursor: pointer;
+}
+.intro:hover{
+    cursor: pointer;
+}
+
+.car-info:hover .intro{
+    height: 310px;
+    bottom: -3px;
+   
+}
+.car-info:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.car-in:hover .intro{
+    height: 265px;
+    bottom: -20px;
+    
+}
+.car-in:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.car-fo:hover .intro{
+    height: 297px;
+    bottom: -13px;
+   
+}
+.car-fo:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+@media screen and (max-width:960px) {
+    .navbar{
+max-width: 890px;
+justify-content: space-between;
+    }
+}
